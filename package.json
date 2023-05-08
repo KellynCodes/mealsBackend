@@ -4,6 +4,7 @@
   "description": "my first express project",
   "main": "index.js",
   "scripts": {
+    "server": "index.js",
     "app": "nodemon index.js"
   },
   "dependencies": {

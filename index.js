@@ -15,6 +15,7 @@ const CartRoute = require("./routes/cart");
 const OrderRoute = require("./routes/order");
 
 //connecting to mongo db database
+mongoose.set("strictQuery", true);
 mongoose
   .connect(process.env.MONGO_URL)
   .then(() => console.log("DBConneciton successfully"))
