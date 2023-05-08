@@ -17,7 +17,9 @@ const OrderRoute = require("./routes/order");
 //connecting to mongo db database
 mongoose.set("strictQuery", true);
 mongoose
-  .connect(process.env.MONGO_URL)
+  .connect(
+    "mongodb+srv://kellyncodes:K3llYnC0d3@meals.op7o7r7.mongodb.net/?retryWrites=true&w=majority"
+  )
   .then(() => console.log("DBConneciton successfully"))
   .catch((err) => {
     console.log(err);
