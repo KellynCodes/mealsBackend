@@ -13,7 +13,7 @@ Router.put("/:id", verifyToken, async (req, res) => {
   if (req.body.password) {
     res.body.password = CryptoJs.AES.encrypt(
       req.body.password,
-      process.env.PASSWORD_SECRET
+      "m3AlskellynCodeswt23238fhadh48fqazndio6yhqyrnYnlasfhaifdhk"
     ).toString();
   }
   try {
